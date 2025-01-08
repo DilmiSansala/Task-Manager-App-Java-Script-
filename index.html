@@ -1,0 +1,42 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <button id="add-task-btn" class="btn">Add Task</button>
+        </header>
+
+        <div id="task-form-container" class="hidden">
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Task Title" required />
+                <input type="date" id="task-date" required />
+                <textarea id="task-description" placeholder="Task Description"></textarea>
+                <button type="submit" id="submit-task-btn" class="btn">Add Task</button>
+                <button type="button" id="cancel-btn" class="btn cancel-btn">Cancel</button>
+            </form>
+        </div>
+
+        <div id="tasks-container">
+            <!-- Tasks will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
